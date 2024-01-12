@@ -1,0 +1,39 @@
+name: My Workflow
+
+on: [push]  # Trigger the workflow on push events
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Use a Linux-based runner wsl for windows
+
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v3
+
+      # Set up Docker
+      - uses: actions/setup-docker@v3
+
+      # Install Python
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.12.0'  # Specify your desired Python version
+
+      # Set up the virtual environment
+      - name: Set up virtual environment
+        run: python -m venv env
+      - name: Activate virtual environment
+        run: source env/bin/activate
+
+      # Install dependencies
+      - name: Install dependencies
+        run: pip install -r requirements.txt  # Assuming you have a requirements.txt file
+
+      # Install Algorand
+      - name: Install Algorand
+        run: pip install py-algorand-sdk
+
+      # Install Django (if needed)
+      - name: Install Django
+        run: pip install django
+
+      
