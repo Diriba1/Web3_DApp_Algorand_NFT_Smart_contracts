@@ -6,34 +6,34 @@ In this project, the client is 10 Academy; the client would like to solve the ch
 
 ### Prerequisites
 
-List any software or tools required to run the project
-Python
-Docker
-Algorand SDK
+1. Python
+2. Docker
+3. Algorand SDK
+
+
 
 ### Installation
 
-Clone the repository: git clone https://github.com/Diriba1/Web3_DApp_Algorand_NFT_Smart_contracts.git
-Create a virtual environment (recommended): python -m venv env
-Activate the virtual environment: source env/bin/activate
-Install algorand-SDK and Django: pip install py-algorand-sdk Django
-Install dependencies: pip install -r requirements.txt
+- Clone the repository: git clone https://github.com/Diriba1/Web3_DApp_Algorand_NFT_Smart_contracts.git
+- Create a virtual environment (recommended): python -m venv env
+- Activate the virtual environment: source env/bin/activate
+- Install dependencies: pip install -r requirements.txt
 
 ### Usage
-cd Web3_DApp_Algorand_NFT_Smart_contracts/sandbox-master
-./sandbox up
-cd ..
-cd algo_backend_django
-Python manage.py runserver
-then go to localhost:8000
-## License
+- cd Web3_DApp_Algorand_NFT_Smart_contracts/sandbox-master
+- ./sandbox up
+- cd ..
+- cd algo_backend_django
+- Python manage.py runserver
+- then go to localhost:8000
 
+## License
 MIT
 ## References
-https://developer.algorand.org/docs/get-started/dapps/
-https://developer.algorand.org/tutorials/creating-javascript-transaction-purestake-api/
-https://developer.algorand.org/solutions/getting-started-with-python-algorand-sdk-and-django/
 
+- https://developer.algorand.org/docs/get-started/dapps/
+- https://developer.algorand.org/tutorials/creating-javascript-transaction-purestake-api/
+- https://developer.algorand.org/solutions/getting-started-with-python-algorand-sdk-and-django/
 
 ## Future Plan
 Future plan for the current application is to implement all the functionalities
