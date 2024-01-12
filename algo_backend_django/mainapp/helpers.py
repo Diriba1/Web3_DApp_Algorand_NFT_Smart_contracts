@@ -1,14 +1,12 @@
-from algosdk import mnemonic
-from algosdk import account
-from algosdk.constants import microalgos_to_algos_ratio
-from algosdk.v2client import indexer
-from algosdk.v2client import algod
-from algosdk.future.transaction import PaymentTxn
-from algosdk.error import WrongChecksumError
 import io
 import os
 import base64
 import subprocess
+from algosdk import mnemonic, account
+from algosdk.constants import microalgos_to_algos_ratio
+from algosdk.v2client import indexer, algod
+from algosdk.future.transaction import PaymentTxn
+from algosdk.error import WrongChecksumError
 from pathlib import Path
 
 

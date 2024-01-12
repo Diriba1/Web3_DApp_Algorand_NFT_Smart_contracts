@@ -1,7 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .helpers import add_standalone_account
 from django.contrib import messages
-from django.shortcuts import redirect
 from .models import Account
 from .forms import TransferFundsForm
 
