@@ -1,8 +1,6 @@
 from algosdk.constants import address_len
 from django.db import models
-from .helpers import account_transactions
-
-from .helpers import passphrase_from_private_key, account_balance
+from .helpers import passphrase_from_private_key, account_balance, account_transactions
 
 
 class Account(models.Model):
