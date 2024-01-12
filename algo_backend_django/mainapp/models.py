@@ -8,7 +8,7 @@ class Account(models.Model):
     """Base model class for Algorand accounts."""
 
     address = models.CharField(max_length=address_len)
-    private_key = models.CharField(max_length=address_len + hash_len)
+    private_key = models.CharField(max_length=address_len)
     created = models.DateTimeField(auto_now_add=True)
 
     def balance(self):
