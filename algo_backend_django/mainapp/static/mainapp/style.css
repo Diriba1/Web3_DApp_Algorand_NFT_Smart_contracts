@@ -30,3 +30,20 @@ body {
     background-color: #5d6d7e;
     color: white;
 }
+ul.messages li.error {
+    color: red;
+}
+
+ul.messages li.success {
+    color: green;
+}
+table.full-width {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+ul.errorlist li {
+    color: red;
+}

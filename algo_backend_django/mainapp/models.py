@@ -1,7 +1,8 @@
 from algosdk.constants import address_len
 from django.db import models
+from .helpers import account_transactions
 
-from .helpers import passphrase_from_private_key
+from .helpers import passphrase_from_private_key, account_balance
 
 
 class Account(models.Model):
@@ -19,3 +20,11 @@ class Account(models.Model):
     def passphrase(self):
         """Return account's mnemonic."""
         return passphrase_from_private_key(self.private_key)
+    
+    def balance(self):
+        """Return this instance's balance in microAlgos."""
+        return account_balance(self.address)
+    
+    def transactions(self):
+        """Return all the transactions involving this account."""
+        return account_transactions(self.address)
